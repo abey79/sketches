@@ -13,6 +13,8 @@ Some additional dependencies might be needed, including but not limited to:
 
 Though I wrote it, note that this code doesn't necessarily match my standards :)
 
+The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
+
 ---
 
 ### `circular_patterns`
