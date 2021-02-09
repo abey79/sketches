@@ -31,7 +31,7 @@ The code is available under the MIT license and the artworks under [CC BY-NC-SA 
 
 ### `hline`
 
-<img width="300" src="hline/output/hline_liked_1.svg" /><img width="300" src="hline/output/hline_liked_2.svg" /><img width="300" src="hline/output/hline_liked_3.svg" />
+<img width="250" src="hline/output/hline_liked_1.svg" /><img width="250" src="hline/output/hline_liked_2.svg" /><img width="250" src="hline/output/hline_liked_3.svg" />
 
 ---
 
