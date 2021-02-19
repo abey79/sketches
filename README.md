@@ -21,7 +21,7 @@ The code is available under the MIT license and the artworks under [CC BY-NC-SA 
 
 That's 500k Perlin noise values obtained in a single call of [noise()](https://vsketch.readthedocs.io/en/latest/reference/vsketch.Vsketch.html#vsketch.Vsketch.noise).
 
-<img width="300" src="https://user-images.githubusercontent.com/49431240/108544725-2c3ae080-72e7-11eb-8a4e-abd1922b823e.png" /><img width="300" src="https://user-images.githubusercontent.com/49431240/108544468-c9494980-72e6-11eb-9e4a-16f8e4afd05b.jpeg" />
+<img width="300" src="https://user-images.githubusercontent.com/49431240/108544725-2c3ae080-72e7-11eb-8a4e-abd1922b823e.png" /><img width="300" src="https://user-images.githubusercontent.com/49431240/108545546-38736d80-72e8-11eb-8eb6-abfcbb8ebca6.jpeg" />
 
 
 ---
