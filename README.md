@@ -15,6 +15,10 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
+--- `random_lines`
+
+That's 500k Perlin noise values obtained in a single call of [noise()](https://vsketch.readthedocs.io/en/latest/reference/vsketch.Vsketch.html#vsketch.Vsketch.noise).
+
 ---
 
 ### `circular_patterns`
