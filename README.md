@@ -16,6 +16,13 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `dots`
+
+Just a bunch of dots drawn with `vsk.point()` on a regular grid. Sometime they are skipped, sometime in a different color.
+
+<img width="1000" src="https://user-images.githubusercontent.com/49431240/110030899-8c457400-7d36-11eb-9587-7aa57b8a0813.jpeg" />
+
+---
 
 ### `random_lines`
 
