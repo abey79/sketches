@@ -7,7 +7,6 @@ import vsketch
 
 
 class DashedLinesSketch(vsketch.Vsketch):
-    # Sketch parameters:
     quantization = vsketch.Param(0.1, unit="mm")
     dash_steps = vsketch.Param(10)
 
@@ -30,7 +29,7 @@ class DashedLinesSketch(vsketch.Vsketch):
                 self.polygon(line[i * self.dash_steps : (i + 1) * self.dash_steps])
 
     def finalize(self) -> None:
-        self.vpype("linemerge linesimplify reloop linesort")
+        self.vpype("linesimplify linesort")
 
 
 if __name__ == "__main__":
