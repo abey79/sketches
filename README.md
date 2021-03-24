@@ -16,6 +16,14 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `drift_poly`
+
+My design for early 2021 `#ptpx`. The config for the 9 cards I made are included in the repo.
+
+<img height="370" src="https://user-images.githubusercontent.com/49431240/112317144-0caf2300-8cac-11eb-887c-5178ad469a7d.jpeg" /><img height="370" src="https://user-images.githubusercontent.com/49431240/112317464-5e57ad80-8cac-11eb-90e4-efec9eebda51.png" /><img height="370" src="https://user-images.githubusercontent.com/49431240/112317151-0e78e680-8cac-11eb-94e9-c36af8359aa7.jpeg" />
+
+
+---
 ### `dots`
 
 Just a bunch of dots drawn with `vsk.point()` on a regular grid. Sometime they are skipped, sometime in a different color.
