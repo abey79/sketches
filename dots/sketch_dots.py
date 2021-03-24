@@ -3,7 +3,7 @@ import math
 import vsketch
 
 
-class DotsSketch(vsketch.Vsketch):
+class DotsSketch(vsketch.SketchClass):
     # Sketch parameters:
     orient = vsketch.Param("portrait", choices=["portrait", "landscape"])
     pitch = vsketch.Param(0.5, 0.0, unit="cm", step=0.125, decimals=3)
@@ -13,7 +13,7 @@ class DotsSketch(vsketch.Vsketch):
     lo_density = vsketch.Param(0.25, step=0.05, decimals=2)
     pen_width = vsketch.Param(0.3, unit="mm", step=0.05)
     mapping = vsketch.Param(
-        "y_grad",
+        "grad",
         choices=[
             "grad",
             "double_grad",
@@ -28,9 +28,9 @@ class DotsSketch(vsketch.Vsketch):
         ],
     )
 
-    def draw(self) -> None:
-        self.size("a6", landscape=self.orient == "landscape")
-        self.penWidth(self.pen_width)
+    def draw(self, vsk: vsketch.Vsketch) -> None:
+        vsk.size("a6", landscape=self.orient == "landscape")
+        vsk.penWidth(self.pen_width)
 
         for j in range(self.num_y):
             for i in range(self.num_x):
@@ -61,7 +61,7 @@ class DotsSketch(vsketch.Vsketch):
                     color_prob = 1.0
                 elif self.mapping == "diagonal_crossover":
                     amt = 1.0 - abs(1.0 - i / self.num_x - j / self.num_y)
-                    color_prob = self.lerp(-0.2, 1.2, (i / self.num_x + j / self.num_y) / 2)
+                    color_prob = vsk.lerp(-0.2, 1.2, (i / self.num_x + j / self.num_y) / 2)
                 elif self.mapping == "stripes":
                     color_prob = math.floor(i / self.num_x * 9) % 2
                     amt = j / self.num_y
@@ -75,24 +75,21 @@ class DotsSketch(vsketch.Vsketch):
                         amt = j / self.num_y
                     else:
                         color_prob = 0.0
-                        amt = self.lerp(-0.5, 1.5, 1 - j / self.num_y)
+                        amt = vsk.lerp(-0.5, 1.5, 1 - j / self.num_y)
                 else:
                     raise NotImplementedError
 
-                prob = self.lerp(self.hi_density, self.lo_density, amt)
-                if self.random(1.0) < color_prob:
-                    self.stroke(1)
+                prob = vsk.lerp(self.hi_density, self.lo_density, amt)
+                if vsk.random(1.0) < color_prob:
+                    vsk.stroke(1)
                 else:
-                    self.stroke(2)
-                if self.random(1.0) < prob:
-                    self.point(i * self.pitch, j * self.pitch)
+                    vsk.stroke(2)
+                if vsk.random(1.0) < prob:
+                    vsk.point(i * self.pitch, j * self.pitch)
 
-    def finalize(self) -> None:
-        self.vpype("reloop linesort")
+    def finalize(self, vsk: vsketch.Vsketch) -> None:
+        vsk.vpype("reloop linesort")
 
 
 if __name__ == "__main__":
-    vsk = DotsSketch()
-    vsk.draw()
-    vsk.finalize()
-    vsk.display()
+    DotsSketch.display()

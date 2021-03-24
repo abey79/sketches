@@ -334,7 +334,7 @@ def make_drawing(dwg: str) -> vp.LineCollection:
     return lc
 
 
-class SimpleSketch(vsketch.Vsketch):
+class CircularPatternSketch(vsketch.SketchClass):
 
     # matrix
     page_size = vsketch.Param("a4", choices=vp.PAGE_SIZES.keys())
@@ -370,51 +370,53 @@ class SimpleSketch(vsketch.Vsketch):
     prob_line = vsketch.Param(0.1, 0, 1, decimals=2, step=0.05)
     prob_multiline = vsketch.Param(0.1, 0, 1, decimals=2, step=0.05)
 
-    def draw(self) -> None:
-        self.size(self.page_size(), landscape=False)
-        self.scale("cm")
-        self.scale(self.scale_factor())
+    def draw(self, vsk: vsketch.Vsketch) -> None:
+        vsk.size(self.page_size, landscape=False)
+        vsk.scale("cm")
+        vsk.scale(self.scale_factor)
 
         prob = {
             # modifiers
-            "+": self.prob_plus(),
-            "-": self.prob_minus(),
-            "O": self.prob_bigger(),
-            "o": self.prob_smaller(),
-            "^": self.prob_raise(),
-            "v": self.prob_lower(),
-            " ": self.prob_segsep(),
-            "\n": self.prob_ringsep(),
+            "+": self.prob_plus,
+            "-": self.prob_minus,
+            "O": self.prob_bigger,
+            "o": self.prob_smaller,
+            "^": self.prob_raise,
+            "v": self.prob_lower,
+            " ": self.prob_segsep,
+            "\n": self.prob_ringsep,
             # primitives
-            "d": self.prob_dot(),
-            "D": self.prob_dotbar(),
-            "c": self.prob_circle(),
-            "b": self.prob_bar(),
-            "p": self.prob_cross(),
-            "s": self.prob_spring(),
-            "r": self.prob_box(),
-            "S": self.prob_sine(),
-            "C": self.prob_carbon(),
-            "l": self.prob_line(),
-            "L": self.prob_multiline(),
+            "d": self.prob_dot,
+            "D": self.prob_dotbar,
+            "c": self.prob_circle,
+            "b": self.prob_bar,
+            "p": self.prob_cross,
+            "s": self.prob_spring,
+            "r": self.prob_box,
+            "S": self.prob_sine,
+            "C": self.prob_carbon,
+            "l": self.prob_line,
+            "L": self.prob_multiline,
         }
 
-        for j in range(self.ny()):
-            for i in range(self.nx()):
+        for j in range(self.ny):
+            for i in range(self.nx):
 
                 # noinspection SpellCheckingInspection
                 drawing = "".join(
-                    random.choices(
-                        list(prob.keys()), list(prob.values()), k=self.letter_count()
-                    )
+                    random.choices(list(prob.keys()), list(prob.values()), k=self.letter_count)
                 )
 
                 lc = make_drawing(drawing)
-                self.stroke((i + j * self.nx()) % self.nlayer() + 1)
-                with self.pushMatrix():
-                    self.translate(i * self.dx(), j * self.dy())
+                vsk.stroke((i + j * self.nx) % self.nlayer + 1)
+                with vsk.pushMatrix():
+                    vsk.translate(i * self.dx, j * self.dy)
                     for line in lc:
-                        self.polygon(line)
+                        vsk.polygon(line)
 
-    def finalize(self) -> None:
-        self.vpype("linesort linesimplify")
+    def finalize(self, vsk: vsketch.Vsketch) -> None:
+        vsk.vpype("linesort linesimplify")
+
+
+if __name__ == "__main__":
+    CircularPatternSketch.display()
