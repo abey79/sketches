@@ -16,6 +16,11 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `postcard`
+
+Helper sketch to create postcards with addresses and a custom message. Very useful for `#ptpx`.
+
+---
 ### `drift_poly`
 
 My design for early 2021 `#ptpx`. The config for the 9 cards I made are included in the repo.
