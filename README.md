@@ -20,6 +20,16 @@ The code is available under the MIT license and the artworks under [CC BY-NC-SA 
 
 Helper sketch to create postcards with addresses and a custom message. Very useful for `#ptpx`.
 
+Instructions:
+
+1) Create the following files next to the sketch script:
+- `addresses.txt`: all the addresses, separated by two new lines
+- `header.txt`: header text
+- `message.txt`: postcard message, may contain $FirstName$, which will be replaced as you
+  expect
+
+2) Run: `vsk run postcard`
+
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/49431240/143276653-4fecfdd9-2131-4663-aed9-a9016bd54f00.png">
 
 
