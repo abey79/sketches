@@ -46,6 +46,13 @@ Instructions:
 
 
 ---
+### `liquid_neon`
+
+Small experiment which combined the `neon` [module sets](https://github.com/abey79/vpype-explorations/blob/master/vpype_explorations/moduleset.py) with some deformation filter that would eventually become the [`squiggles` command](https://vpype.readthedocs.io/en/stable/reference.html#squiggles).
+
+<img width="586" alt="image" src="https://user-images.githubusercontent.com/49431240/150774317-578be061-d340-4957-a2a8-fbfa87d82b02.png">
+
+---
 ### `drift_poly`
 
 My design for early 2021 `#ptpx`. The config for the 9 cards I made are included in the repo.
