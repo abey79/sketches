@@ -15,7 +15,19 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
+
 ---
+### `machine_typography`
+
+17 letters for 17 recipients. This is my winter '21-'22 [`#ptpx`](https://twitter.com/search?q=%23ptpx) contribution.
+
+![IMG_1676_2200](https://user-images.githubusercontent.com/49431240/150769606-5d2f430c-4fa0-4326-a5ef-3090ca396d48.jpeg)
+
+<img height="338" alt="image" src="https://user-images.githubusercontent.com/49431240/150769894-4add31e8-e975-466e-a9b9-7bcb8d66cb42.jpg"> <img height="338" alt="image" src="https://user-images.githubusercontent.com/49431240/150769907-eac67939-0e6a-4203-8769-e0031c06f210.jpg"> <img height="338" alt="image" src="https://user-images.githubusercontent.com/49431240/150769919-9faaba73-8bda-40d0-9151-1fd117f1b89a.jpg">
+
+
+---
+
 ### `postcard`
 
 Helper sketch to create postcards with addresses and a custom message. Very useful for `#ptpx`.
