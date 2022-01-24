@@ -42,6 +42,15 @@ Me
 
 class PostcardSketch(vsketch.SketchClass):
     addr_id = vsketch.Param(0, 0, len(ADDRESSES) - 1)
+    address_only = vsketch.Param(False)
+    address_font_size = vsketch.Param(18)
+    address_line_spacing = vsketch.Param(0.6, decimals=1)
+    address_y_offset = vsketch.Param(6.5, decimals=1)
+    header_font_size = vsketch.Param(12)
+    header_line_spacing = vsketch.Param(0.4, decimals=1)
+    message_font_size = vsketch.Param(12)
+    message_line_spacing = vsketch.Param(0.4, decimals=1)
+    message_y_offset = vsketch.Param(2.8, decimals=1)
 
     @staticmethod
     def draw_text(
@@ -60,25 +69,42 @@ class PostcardSketch(vsketch.SketchClass):
         vsk.size("a6", landscape=True, center=False)
         vsk.scale("cm")
 
-        vsk.line(8, 0.5, 8, 10)
-        vsk.rect(12.5, 0.5, 1.8, 2.2)
+        address = ADDRESSES[self.addr_id].split("\n")
+
+        if not self.address_only:
+            vsk.line(8, 0.5, 8, 10)
+            vsk.rect(12.5, 0.5, 1.8, 2.2)
+
+            self.draw_text(
+                vsk,
+                HEADER.split("\n"),
+                (0.5, 0.8),
+                self.header_line_spacing,
+                self.header_font_size,
+            )
+
+            # deal with abbreviated first name
+            name_line = address[0].split(" ")
+            if len(name_line) > 2 and len(name_line[1]) > len(name_line[0]):
+                name = name_line[1]
+            else:
+                name = name_line[0]
+
+            self.draw_text(
+                vsk,
+                MESSAGE.replace("$FirstName$", name).split("\n"),
+                (0.5, self.message_y_offset),
+                self.message_line_spacing,
+                self.message_font_size,
+            )
 
         self.draw_text(
             vsk,
-            HEADER.split("\n"),
-            (0.5, 0.8),
-            0.4,
-            5.5,
+            address,
+            (8.5, self.address_y_offset),
+            self.address_line_spacing,
+            self.address_font_size,
         )
-
-        address = ADDRESSES[self.addr_id].split("\n")
-        name = address[0].split(" ")[0]
-
-        self.draw_text(
-            vsk, MESSAGE.replace("$FirstName$", name).split("\n"), (0.5, 2.5), 0.5, 7
-        )
-
-        self.draw_text(vsk, address, (8.5, 6.5), 0.5, 9)
 
     def finalize(self, vsk: vsketch.Vsketch) -> None:
         pass

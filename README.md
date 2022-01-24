@@ -36,13 +36,13 @@ Instructions:
 
 1) Create the following files next to the sketch script:
 - `addresses.txt`: all the addresses, separated by two new lines
-- `header.txt`: header text
-- `message.txt`: postcard message, may contain $FirstName$, which will be replaced as you
-  expect
+- `header.txt`: header text (typically, your address)
+- `message.txt`: postcard message, may contain $FirstName$, which will be replaced as you expect
+2) Run the sketch: `vsk run postcard`
+3) Adjust the parameters and your message until everything looks good, then save a configuration (`my_config`)
+4) Export all SVGs: `vsk save --config my_config --param addr_id 0..8 postcard` (adjust the address ID range as needed)
 
-2) Run: `vsk run postcard`
-
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/49431240/143276653-4fecfdd9-2131-4663-aed9-a9016bd54f00.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/49431240/150772890-1154f70e-93cf-46ad-80dc-74e4ebc11f95.png">
 
 
 ---
