@@ -15,6 +15,12 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
+---
+### `fill_test`
+
+![](https://bylr.info/sketch-fill-test/banner.jpg)
+
+Details [here](https://bylr.info/articles/2022/04/28/sketch-fill-test/).
 
 ---
 ### `machine_typography`
