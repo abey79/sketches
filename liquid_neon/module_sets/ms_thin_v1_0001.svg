@@ -1,14 +1,1 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="4cm" height="4cm" viewBox="0 0 113.38583 113.38583">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #231f20;
-        stroke-miterlimit: 10;
-      }
-    </style>
-  </defs>
-  <title>ms_thin_v1</title>
-  <line class="cls-1" x1="68.0315" y1="56.69291" x2="113.38583" y2="56.69291"/>
-  <circle class="cls-1" cx="56.69291" cy="56.69291" r="11.33858"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="4cm" height="4cm" data-name="Layer 1" viewBox="0 0 113.386 113.386"><defs><style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10}</style></defs><title>ms_thin_v1</title><line x1="68.031" x2="113.386" y1="56.693" y2="56.693" class="cls-1"/><circle cx="56.693" cy="56.693" r="11.339" class="cls-1"/></svg>
