@@ -1,0 +1,7 @@
+# see campi for installation
+# --system-site-packages required
+
+fastapi
+uvicorn[standard]
+picamera2
+rpimotorlib
