@@ -16,6 +16,18 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `world`
+
+Rotating earth, 280-frame loop I made to illustrate my [article](https://bylr.info/articles/2022/12/22/automatic-plotloop-machine/) on the Automatic #plotloop Machine.
+
+Here is a video of the process:
+[![](https://img.youtube.com/vi/w_PPPImmEN8/0.jpg)](https://www.youtube.com/watch?v=w_PPPImmEN8)
+
+And the resulting loop:
+
+![](https://github.com/abey79/sketches/blob/master/world/output/world_frame_count_280_pixelize_False_final.gif)
+
+---
 ### `warp`
 
 Hyperspace jump, 200-frame loop made automatically with a couple of Raspberry Pi, some LEGOs and a [Doit](https://pydoit.org) script.

@@ -1,3 +1,8 @@
+"""This is part of the Automatic #plotloop Machine project.
+
+Details: https://bylr.info/articles/2022/12/22/automatic-plotloop-machine/
+"""
+
 import RPi.GPIO as GPIO
 from fastapi import FastAPI
 from fastapi.responses import FileResponse

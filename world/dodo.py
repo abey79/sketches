@@ -1,3 +1,8 @@
+"""This is part of the Automatic #plotloop Machine project.
+
+Details: https://bylr.info/articles/2022/12/22/automatic-plotloop-machine/
+"""
+
 # requirements:
 # - imagemagick
 # - axicli
