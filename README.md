@@ -16,6 +16,12 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `snowflake`
+
+A quick-and-dirty snowflake generator for Xmas giftwrap decoration.
+
+
+---
 ### `world`
 
 Rotating earth, 280-frame loop I made to illustrate my [article](https://bylr.info/articles/2022/12/22/automatic-plotloop-machine/) on the Automatic #plotloop Machine.
