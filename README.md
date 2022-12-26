@@ -20,6 +20,8 @@ The code is available under the MIT license and the artworks under [CC BY-NC-SA 
 
 A quick-and-dirty snowflake generator for Xmas giftwrap decoration.
 
+<img width="519" alt="xmas gifts decorated with plotted generative snowflakes" src="https://user-images.githubusercontent.com/49431240/209542452-d0055d62-91f7-4b76-bfba-cde531dcbd65.jpeg">
+
 
 ---
 ### `world`
