@@ -16,6 +16,14 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ---
+### `kare`
+
+Tribute to Susan Kare's iconic work on the early Macintosh. These were my #ptpx22 postcards. Made with [vpype-pixelart](https://github.com/abey79/vpype-pixelart).
+
+<img height="519" src="https://user-images.githubusercontent.com/49431240/210214704-41ee648b-db31-4b38-9410-f055356718d1.jpeg"> <img height="519" src="https://user-images.githubusercontent.com/49431240/210214709-e7f48afc-222d-4225-b7c6-20939395c5ad.jpeg">
+
+
+---
 ### `snowflake`
 
 A quick-and-dirty snowflake generator for Xmas giftwrap decoration.
