@@ -92,6 +92,10 @@ Instructions:
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/49431240/150772890-1154f70e-93cf-46ad-80dc-74e4ebc11f95.png">
 
+**Added Jan. 2023**: support for bitmap font rendering using the [Monocraft](https://github.com/IdreesInc/Monocraft) font:
+
+![](https://user-images.githubusercontent.com/49431240/210215302-38221e85-1da9-4e24-bbf3-d4db28c4327f.jpeg)
+
 
 ---
 ### `liquid_neon`
