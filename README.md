@@ -15,6 +15,15 @@ Though I wrote it, note that this code doesn't necessarily match my standards :)
 
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
+
+---
+### `layers`
+
+Quick and dirty sketch to serve as banner for my [article on layers, *vpype*, and the Axidraw](https://bylr.info/articles/2023/03/17/layer-names/).
+
+<img width="100%" src="layers/output/layers_liked_2_plotted.jpg" />
+
+
 ---
 ### `kare`
 
