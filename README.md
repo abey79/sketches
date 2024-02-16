@@ -1,6 +1,6 @@
 # sketches
 
-My collection of personal plotter generative art sketches made with [vsketch](https://github.com/abey79/vsketch). Most can be run and interacted with using the following command:
+My collection of personal plotter generative art sketches made with [vsketch](https://github.com/abey79/vsketch) and [whiskers](https://github.com/abey79/vsvg/tree/master/crates/whiskers). Sketches made with _vsketch_ can generally be run and interacted with using the following command:
 
 ```bash
 $ vsk run hline
@@ -11,10 +11,26 @@ Some additional dependencies might be needed, including but not limited to:
 - [hatched](https://github.com/abey79/hatched)
 - [vpype-text](https://github.com/abey79/vpype-text)
 
-Though I wrote it, note that this code doesn't necessarily match my standards :)
+The sketches made with _whiskers_ can be run and interacted with using the following commands:
+
+```bash
+$ cd hex_cells
+$ cargo run --release
+```
+
+A working installation of [Rust](https://www.rust-lang.org) is needed.
+
+**Disclaimer**: Though I wrote it, note that this code doesn't necessarily match my standards—here the end justifies the means :)
 
 The code is available under the MIT license and the artworks under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
+---
+### `hex_cells`
+
+My #ptpx23 postcards. First sketch made with _whiskers_ on this repo.
+
+![0D3A2129_2048](https://github.com/abey79/sketches/assets/49431240/7212b670-fe7a-4946-9e9f-f63405e45af4)
+![0D3A2131_2048](https://github.com/abey79/sketches/assets/49431240/9f1c4716-48de-4e95-95fe-899250a68904)
 
 ---
 ### `layers`
