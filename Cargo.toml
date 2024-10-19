@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "hex_cells",
+]
+
+[workspace.package]
+authors = ["Antoine Beyeler"]
+edition = "2021"
+license = "MIT"

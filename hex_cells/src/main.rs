@@ -63,10 +63,10 @@ impl App for Ptpx2024Sketch {
         let noise_offset_x = ctx.rng_range(0.0..10000.0);
         let noise_offset_y = ctx.rng_range(0.0..10000.0);
 
-        grid.cell_size(self.cell_size.into())
+        grid.cell_size(self.cell_size)
             .columns(self.columns)
             .rows(self.rows)
-            .spacing(self.spacing.into())
+            .spacing(self.spacing)
             .build(sketch, |sketch, cell| {
                 // choose color based on columns
                 if self.columns > 1 {
