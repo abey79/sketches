@@ -37,7 +37,6 @@ try:
 except FileNotFoundError:
     HEADER = "Myself\nMy Place\nMy town, USA"
 
-
 try:
     MESSAGE = (Path(__file__).parent / "message.txt").read_text()
 except FileNotFoundError:
@@ -59,7 +58,7 @@ def extract_name(line: str) -> tuple[str, str]:
     tuple with the first word of the line and the entire line.
     """
     if "[" in line and "]" in line:
-        name = line[line.index("[") + 1 : line.index("]")]
+        name = line[line.index("[") + 1: line.index("]")]
         return name, line.replace("[", "").replace("]", "")
     else:
         return line.split()[0], line
@@ -71,11 +70,11 @@ def text_dimension(txt: str) -> tuple[int, int]:
 
 
 def draw_bitmap_font(
-    vsk: vsketch.Vsketch,
-    txt: str,
-    pos: tuple[float | str, float | str],
-    upscale: int,
-    pen_width: float,
+        vsk: vsketch.Vsketch,
+        txt: str,
+        pos: tuple[float | str, float | str],
+        upscale: int,
+        pen_width: float,
 ) -> None:
     # generate image
     w, h = text_dimension(txt)
@@ -98,11 +97,11 @@ def draw_bitmap_font(
 
 
 def draw_text(
-    vsk: vsketch.Vsketch,
-    txt: str,
-    pos: tuple[float, float],
-    line_offset: float,
-    text_size: float,
+        vsk: vsketch.Vsketch,
+        txt: str,
+        pos: tuple[float, float],
+        line_offset: float,
+        text_size: float,
 ) -> None:
     for i, line in enumerate(txt.splitlines()):
         vsk.text(line, pos[0], pos[1] + i * line_offset, size=text_size, mode="label")
@@ -128,7 +127,7 @@ class PostcardSketch(vsketch.SketchClass):
     # message stuff
     message_bitmap_font = vsketch.Param(False)
     message_font_size = vsketch.Param(12)
-    message_line_spacing = vsketch.Param(0.4, decimals=1)
+    message_line_spacing = vsketch.Param(0.4, decimals=2)
     message_y_offset = vsketch.Param(2.8, decimals=1)
 
     def draw(self, vsk: vsketch.Vsketch) -> None:
