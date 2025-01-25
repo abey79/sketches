@@ -1,6 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
+    "bez_grid",
     "hex_cells",
 ]
 
